@@ -1,0 +1,464 @@
+ /* Section two */
+ .Abdo-Payment-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:100%;
+    justify-content: center;
+    grid-template-areas:
+    'left right';
+    gap:10rem;
+    width:100%;
+    padding:1.5rem;
+}
+
+.Abdo-payment-text-area{
+  grid-area:right;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+  justify-content: start;
+  width:100%;
+  z-index:4;
+}
+.Abdo-Button{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+}
+.Abdo-btn{
+    background-color:transparent;
+    border:1px solid #396AFF;
+    font-weight:bold;
+    border-radius:24px  ;
+    padding:0.78rem ;
+    padding-left:1.5rem ;
+    padding-right:1.5rem ;
+    color:#396AFF;
+}
+.Abdo-Title{
+  font-family:'Poppins';
+  font-weight: 600;
+  font-size: 44px;
+  color:#1C1C1C;
+  width:100%;
+}
+.Abdo-paragraph{
+  font-family:'Poppins';
+  font-weight:500;
+  font-size:24px;
+  color:#909090;
+}
+/* .Abdo-button{
+  display:flex;
+  padding:0.78rem;
+} */
+
+.Abdo-payment-image-area{
+  grid-area:left;
+  position: relative;
+  width:100%;
+  height:auto;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.Abdo-mockuptwo{
+  position:absolute;
+  z-index:2;
+  left:-25%;
+  bottom:13%;
+  width:37%;
+  height:auto;
+}
+.Abdo-DeskTopImg{
+  position:absolute;
+  width:80%;
+  height:auto;
+
+}
+.Abdo-Frameimgtwo{
+  position:absolute;
+  z-index:2;
+  bottom:0%;
+ left:6%;
+  width:25%;
+  height:auto;
+}
+.Abdo-Frameimgone{
+  position:absolute;
+  z-index:2;
+  top:27%;
+  right:16%;
+  width:25%;
+  height:auto;
+}
+.Abdo-payment-text-area .ellipse14{
+  position:absolute;
+  z-index:0;
+  right:0%;
+  top:-45%;
+  height:auto;
+  z-index:-2;
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+    .Abdo-Payment-section {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 100%;
+        grid-template-areas:   "right"
+                               "left" ;
+        /* gap:20rem; */
+    }
+    .Abdo-Title{
+        font-size:2.5rem;
+        width:100%;
+        height:auto;
+        text-align:center;
+    }
+    .Abdo-paragraph{
+        width:100%;
+        font-size:12px;
+        height:auto;
+        text-align:center;
+    }
+    .Abdo-Button{
+        justify-content: center;
+    }
+   .Abdo-DeskTopImg{
+    width:100%
+   }
+    .ellipse14{
+      display:none;
+    }
+  }
+  @media (min-width:768px) and (max-width:1199px){
+    .Abdo-Payment-section {
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns: 100%;
+        grid-template-areas:  "right"
+                              "left";
+        margin-top:0.5rem;
+        gap:15rem;            
+    }
+     .Abdo-Title{
+        text-align:center;
+    }
+    .Abdo-paragraph{
+        width:100%;
+        font-size:12px;
+        height:auto;
+        text-align:center;
+    }
+    .ellipse14{
+      display:none;
+    }
+    .Abdo-Button{
+        justify-content: center;
+    }
+  }
+  @media(min-width:2400px){
+    .Abdo-DeskTopImg{
+        width:40%;
+        height:auto;
+    }
+  }
+
+/* ... */
+.Abdo-Make-it-your-own-section{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:100%;
+  justify-content: center;
+  grid-template-areas:
+  'left right';
+  gap:10rem;
+  width:100%;
+  padding-top:9rem;
+}
+
+.Abdo-Your-Own-Text-Area{
+  grid-area:left;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+  justify-content: start;
+  width:100%;
+  padding:1.5rem;
+  z-index:4;
+}
+.Abdo-Title>h2{
+  font-family:'Poppins';
+  font-weight: 600;
+  font-size: 44px;
+  color:#1C1C1C;
+  width:100%;
+}
+.Abdo-paragraph>p{
+  font-family:'Poppins';
+  font-weight:500;
+  font-size:24px;
+  color:#909090;
+}
+.Abdo-leftBtn{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+}
+.Abdo-Your-Own-Image-area{
+  grid-area:right;
+  position: relative;
+  width:100%;
+  height:auto;
+  display:flex;
+}
+.Abdo-Your-Own-Text-Area .ellipse15{
+  position:absolute;
+  z-index:0;
+  left:0%;
+  top:-45%;
+  height:auto;
+  z-index:-2;
+}
+
+.Abdo-mockuptwo{
+  position:absolute;
+  z-index:2;
+  left:-1%;
+  bottom:22%;
+  width:25%;
+  height:auto;
+}
+.Abdo-DeskTopImg1{
+  position:absolute;
+  width:80%;
+  height:auto;
+
+}
+.Abdo-btn:hover{
+  background-color:#396AFF;
+  color:white;
+  cursor:pointer;
+}
+/*  */
+.abdo-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10rem;
+  width:100%;
+  margin-top:1rem;
+  flex-direction: row;
+}
+.main1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
+  margin-top:3rem;
+  position: relative;
+  width:100%;
+
+}
+.main1 .vector {
+    position: absolute;
+  
+    height: auto;
+    top: -5%;
+  }
+  .vector {
+    z-index: -1;
+    left: calc((100% - (724px)) / 2);
+  }
+  .alaraby-padding-10 {
+    padding-bottom: 8rem;
+  }
+.parentCurcileone{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 3px dashed blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.parent {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.curcile {
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+
+}
+.parentCurciletwo,
+.parentCurcilethree,
+.parentCurcilefour{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed black;
+
+}
+.two , .three , .four{
+  background-color:black;
+}
+.columnDashed {
+  width: 5px;
+  height: 60px;
+  border-left: 3px dashed black;
+  position: relative;
+  left: 3px;
+
+}
+.column {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content: start;
+  gap:4rem;
+  width:100%;
+  height:55%;
+} 
+.column>h1{
+  font-size:30px;
+}
+.right{
+  text-align:right;
+}
+.left{
+  text-align:left;
+}
+.abdo-iPhone14 {
+    width: inherit;
+    height: inherit;
+    max-width: 30rem;
+    margin-top: 9rem;
+  }
+.abdo-child{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (min-width:320px) and (max-width: 767px) {
+    .Abdo-Make-it-your-own-section {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 100%;
+        grid-template-areas:   "left"
+                                "right" ;
+        gap:3rem;
+        
+  
+    }
+    .Abdo-DeskTopImg1x{
+        width:100%;
+        height:auto;
+    }
+    .Abdo-mockuptwo{
+       width:30%;
+       height:auto;
+    }
+    .ellipse15{
+      display:none;
+    }
+    .column>h1{
+        font-size:14px;
+    }
+    .column>h3{
+        font-size:10px;
+    }
+    .main1{
+        width:100%;
+        gap:0.25rem;
+    }
+    .left{
+      gap:5.30rem;
+      text-align:left;
+    }
+    .right{
+      gap:5.30rem;
+    }
+  }
+  @media (min-width:768px) and (max-width:1199px){
+    .Abdo-Make-it-your-own-section {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 100%;
+        grid-template-areas:   "left"
+                              "right" ;
+        padding-top:10.5rem;
+        gap:0rem;
+  }
+  .Abdo-Your-Own-Text-Area h2{
+    font-size:4.5rem;
+  }
+  .Abdo-paragraph{
+    width:100%;
+    font-size:12px;
+    height:auto;
+    text-align:center;
+}
+.Abdo-DeskTopImg1x{
+    width:100%;
+    height:auto;
+}
+.Abdo-mockuptwo{
+   width:30%;
+   height:auto;
+}
+  .ellipse15{
+    display:none;
+  }
+  .column>h1{
+    font-size:24px;
+  }
+  .column>h3{
+      font-size:16px;
+  }
+  .main1{
+      width:100%;
+      gap:0.25rem;
+  }
+  .left{
+    gap:5rem;
+    text-align:left;
+  }
+  .right{
+    gap:5rem;
+  }
+  }
+  @media(min-width:2400px){
+    .Abdo-DeskTopImg1x{
+        width:100%;
+        height:auto;
+    }
+    .Abdo-mockuptwo{
+       width:30%;
+       height:auto;
+    }
+    .ellipse15{
+        display:none;
+      }
+      
+  }
+  @media (max-width: 1199px) {
+  .abdo-left1 {
+    display: none;
+  }
+  .abdo-right1 {
+    display: flex;
+    justify-content: center;
+  }
+}

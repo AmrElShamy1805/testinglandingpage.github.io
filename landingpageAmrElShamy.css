@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .AmrElShamy-root-div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+      "Header"
+      "Main"
+      "Footer";
+    gap: 1.5rem;
+    overflow: clip;
+  }
+  .AmrElShamy-topheader {
+    grid-area: Header;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-family: "Poppins";
+    border-bottom: 1px solid lightgray;
+    z-index: 10;
+  }
+
+  .AmrElShamy-Logo {
+    width: fit-content;
+    height: fit-content;
+    padding-bottom:0.95rem;
+  }
+  .AmrElShamy-nav-item {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 1.5rem;
+  }
+  .AmrElShamy-nav-link {
+    text-decoration: none;
+    color: #1c1c1c;
+  }
+  .AmrElShamy-nav-link:hover {
+    color: #396aff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .AmrElShamy-rightBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.55rem;
+    padding-bottom: 0.95rem;
+  }
+  .AmrElShamy-btntop {
+    background-color: transparent;
+    border: 1px solid #396aff;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 0.78rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #396aff;
+    display: inline-block;
+  }
+  .AmrElShamy-btntop:hover {
+    background-color: #396aff;
+    color: white;
+    cursor: pointer;
+  }
+  main {
+    grid-area: Main;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .AmrElShamy-HeroSection {
+    width: 85%;
+    display:grid;
+    grid-template-rows:repeat(3,auto);
+    grid-template-columns:100%;
+    grid-template-areas:"Text-Buttons"
+                        "Images"
+                        "Sponsors";
+    row-gap:1rem;
+    margin-bottom:4.5rem;
+  }
+  .AmrElShamy-Text-ButtonArea {
+    grid-area:Text-Buttons;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "DM sans";
+    gap: 0.5rem;
+  }
+  .AmrElShamy-Text-ButtonArea > h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #396aff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+  }
+  .AmrElShamy-GymManagementTitle{
+    width:55%;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.AmrElShamy-GymManagementTitle h2{
+    font-weight:700;
+    font-size: 50px;
+    color:#170F49;
+    width:75%;
+    line-height:62px;
+    text-align:center;
+}
+  .AmrElShamy-GymManagementParagraph {
+    font-weight: 400;
+    font-size: 18px;
+    color: #6f6c90;
+    width: 45%;
+  }
+  .AmrElShamy-GymManagementButtonSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .AmrElShamy-leftbtn,
+  .AmrElShamy-rightbtn {
+    width: 100%;
+    height:auto;
+  }
+  .AmrElShamy-leftbtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .AmrElShamy-rightbtn {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .AmrElShamy-leftbtn button {
+    background-color: #396aff;
+    border: 1px solid #396aff;
+    padding: 0.78rem;
+    border-radius: 24px;
+    width: 25%;
+    color: white;
+    font-weight: bold;
+  }
+  .AmrElShamy-blob{
+    z-index:-1;
+  }
+  .AmrElShamy-leftbtn button:hover {
+    cursor: pointer;
+  }
+  .AmrElShamy-rightbtn button {
+    background-color: transparent;
+    border: 1px solid #396aff;
+    padding: 0.78rem;
+    border-radius: 24px;
+    width: 25%;
+    color: #396aff;
+    font-weight: bold;
+  }
+  .AmrElShamy-rightbtn button:hover {
+    cursor: pointer;
+  }
+  .AmrElShamy-GymManagementImgArea {
+    grid-area:Images;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .AmrElShamy-homeimg {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    top: 15%;
+    z-index: 1;
+  }
+  .AmrElShamy-mockupiphone {
+    position: absolute;
+    width: auto;
+    height: 55%;
+    right: 13%;
+    bottom: 34%;
+    z-index: 2;
+  }
+  .AmrElShamy-Frameimg {
+    position: absolute;
+    z-index: 2;
+    height: 10%;
+    width: auto;
+    left: 21%;
+    bottom: 37%;
+  }
+  .AmrElShamy-ClassCardone {
+    position: absolute;
+    top: 4%;
+    left: 13%;
+    width: 20%;
+    height: auto;
+  }
+  .AmrElShamy-elipse {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: -50%;
+    left: -15%;
+    z-index:-1;
+  }
+  .AmrElShamy-Sponsors {
+    grid-area:Sponsors;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .AmrElShamy-sponsorlogo {
+    width: 10%;
+    height: auto;
+  }
+  .hiddengroup{
+    visibility:hidden;
+  }
+  /* Gym Management section responsive */
+  @media(min-width:320px) and (max-width:767px){
+    .AmrElShamy-HeroSection{
+      grid-template-rows:repeat(3,auto);
+      row-gap:2rem;
+    }
+    .AmrElShamy-Text-ButtonArea > h4{
+      padding-top:1rem;
+      width:100%;
+      height:auto;
+      font-size:14px;
+    }
+    .AmrElShamy-GymManagementTitle>h2{
+      font-size:24px;
+      width:100%;
+      height:auto;
+    }
+    .AmrElShamy-GymManagementParagraph{
+      font-size:12px;
+    }
+    .AmrElShamy-GymManagementButtonSec{
+      display:flex;
+      flex-direction:column;
+      gap:0.5rem;
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-rightbtn,.AmrElShamy-leftbtn{
+      justify-content: center;
+      width: 100%;
+      height:auto;
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-leftbtn>button{
+      width:calc(200%/2);
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-rightbtn>button{
+      width:calc(200%/2);
+    }
+    .AmrElShamy-elipse{
+      display:none;
+    }
+    .AmrElShamy-homeimg{
+      display:none;
+    }
+    .AmrElShamy-Frameimg{
+      display:none;
+    }
+    .AmrElShamy-ClassCardone{
+      display:none;
+    }
+    .AmrElShamy-mockupiphone{
+      display:none;
+    }
+    .hiddengroup{
+      visibility: visible;
+      width:100%;
+      height:auto;
+    }
+    .AmrElShamy-Sponsors{
+      flex-flow:row wrap;
+    }
+    .AmrElShamy-sponsorlogo{
+      width:calc(80%/2);
+    }
+    .AmrElShamy-blob{
+      display:none;
+    }
+  }
+  @media (min-width:768px) and (max-width:1199px){
+    .AmrElShamy-HeroSection{
+      grid-template-rows:1fr 1fr 1fr;
+      row-gap:2rem;
+    }
+    .AmrElShamy-Text-ButtonArea > h4{
+      padding-top:1rem;
+      width:100%;
+      height:auto;
+      font-size:18px;
+    }
+    .AmrElShamy-GymManagementTitle>h2{
+      font-size:32px;
+      width:100%;
+      height:auto;
+    }
+    .AmrElShamy-GymManagementParagraph{
+      font-size:16px;
+    }
+    .AmrElShamy-GymManagementButtonSec{
+      display:flex;
+      flex-direction:row;
+      gap:0.5rem;
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-rightbtn,.AmrElShamy-leftbtn{
+      width: 100%;
+      height:auto;
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-leftbtn{
+      justify-content:flex-end;
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-rightbtn{
+      justify-content:flex-start;
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-leftbtn>button{
+      width:65%;
+    }
+    .AmrElShamy-GymManagementButtonSec>.AmrElShamy-rightbtn>button{
+      width:65%;
+    }
+    .AmrElShamy-elipse{
+      display:none;
+    }
+    .AmrElShamy-homeimg{
+      display:none;
+    }
+    .AmrElShamy-Frameimg{
+      display:none;
+    }
+    .AmrElShamy-ClassCardone{
+      display:none;
+    }
+    .AmrElShamy-mockupiphone{
+      display:none;
+    }
+    .hiddengroup{
+      visibility: visible;
+      width:100%;
+      height:auto;
+    }
+    .AmrElShamy-Sponsors{
+      flex-flow:row wrap;
+    }
+    .AmrElShamy-sponsorlogo{
+      width:calc(80%/2);
+    }
+    .AmrElShamy-blob{
+      display:none;
+    }
+  }
+  @media(min-width:2400px){
+    .AmrElShamy-homeimg{
+      display:none;
+    }
+    .AmrElShamy-Frameimg{
+      display:none;
+    }
+    .AmrElShamy-ClassCardone{
+      display:none;
+    }
+    .AmrElShamy-mockupiphone{
+      display:none;
+    }
+    .hiddengroup{
+      visibility: visible;
+      width:100%;
+      height:auto;
+    }
+    .AmrElShamy-blob{
+      display:none;
+    }
+  }
+  .AmrElShamy-Insights-and-Reports-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-template-areas: "left right";
+    gap: 20rem;
+    width: 100%;
+    padding-left:1.5rem;
+  }
+  .AmrElShamy-Insight-LeftSide {
+    grid-area: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: start;
+    width: 100%;
+    z-index: 4;
+  }
+  .AmrElShamy-Insight-LeftSide .AmrElShamy-elipse {
+    position: absolute;
+    z-index: 0;
+    width: 55%;
+    right: 80%;
+    bottom: 75%;
+    height: auto;
+  }
+  .AmrElShamy-Insight-Title{
+    width:100%;
+}
+.AmrElShamy-Insight-Title h1{
+    font-family:'Poppins';
+    font-weight: 600;
+    font-size: 64px;
+    color:#1C1C1C;
+    text-align:left;
+    line-height:96px;
+
+}
+  .AmrElShamy-Insight-paragraph {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 24px;
+    color: #909090;
+  }
+  .AmrElShamy-Insight-button {
+    display: flex;
+    padding: 0.78rem;
+  }
+  .AmrElShamy-Insight-RightSide {
+    grid-area: right;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .AmrElShamy-mockuptwo {
+    position: absolute;
+    z-index: 2;
+    left: -25%;
+    bottom: 13%;
+    width: 37%;
+    height: auto;
+  }
+  .AmrElShamy-DeskTopImg {
+    position: absolute;
+    width: 80%;
+    height: auto;
+  }
+  .AmrElShamy-Frameimgtwo {
+    position: absolute;
+    z-index: 2;
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    height: auto;
+  }
+  .AmrElShamy-InsightFull {
+    visibility:hidden;
+  }
+  @media(min-width:320px) and (max-width:767px){
+      .AmrElShamy-Insights-and-Reports-section{
+        grid-template-rows:1fr 1fr;
+        grid-template-columns:100%;
+        grid-template-areas: "left"
+                             "right";
+        gap:3rem;
+      }
+      .AmrElShamy-Insight-LeftSide{
+        display:flex;
+        justify-content: center;
+      }
+      .AmrElShamy-Insight-RightSide{
+        display:flex;
+        justify-content: center;
+      }
+      .AmrElShamy-Insight-Title h1{
+        text-align:center;
+        font-size:2.5rem;
+      }
+      .AmrElShamy-Insight-paragraph {
+        text-align:center;
+        font-size:10px;
+      }
+      .AmrElShamy-Insight-button{
+        justify-content: center;
+      }
+      .AmrElShamy-mockuptwo{
+        display:none;
+      }
+      .AmrElShamy-InsightFull{
+        visibility: visible;
+        height:auto;
+        width:100%;
+      }
+      .AmrElShamy-Frameimgtwo{
+        left:30%;
+        top:60%;
+      }
+      .AmrElShamy-DeskTopImg{
+        display:none;
+      }
+  }
+  @media(min-width:768px) and (max-width:1199px){
+    .AmrElShamy-Insights-and-Reports-section{
+      grid-template-rows:repeat(2,auto);
+      grid-template-columns:100%;
+      grid-template-areas: "left"
+                           "right";
+      gap:3rem;
+    }
+    .AmrElShamy-Insight-LeftSide{
+      display:flex;
+      justify-content: center;
+    }
+    .AmrElShamy-Insight-RightSide{
+      display:flex;
+      justify-content: center;
+    }
+    .AmrElShamy-Insight-Title h1{
+      text-align:center;
+      font-size:2.5rem;
+    }
+    .AmrElShamy-Insight-paragraph {
+      text-align:center;
+      font-size:14px;
+    }
+    .AmrElShamy-Insight-button{
+      justify-content: center;
+    }
+    .AmrElShamy-mockuptwo{
+      display:none;
+    }
+    .AmrElShamy-InsightFull{
+      visibility: visible;
+      height:auto;
+      width:100%;
+    }
+    .AmrElShamy-Frameimgtwo{
+      /* display:none; */
+      left:40%;
+    }
+    .AmrElShamy-DeskTopImg{
+      display:none;
+    }
+  }
+  @media(min-width:2400px){
+    .AmrElShamy-InsightFull{
+      visibility: visible;
+      height:auto;
+      width:100%;
+      position:relative;
+      top:0;
+    }
+    .AmrElShamy-Frameimgtwo{
+      display:none;
+    }
+    .AmrElShamy-DeskTopImg{
+      display:none;
+    }
+    .AmrElShamy-mockuptwo{
+      display:none;
+    }
+  }
+  

@@ -1,0 +1,401 @@
+/* Global Styles */
+:root {
+    --blue-50: #ebf0ff;
+    --blue-100: #c2d1ff;
+    --blue-200: #a4baff;
+    --blue-300: #7a9bff;
+    --blue-400: #6188ff;
+    --blue-500: #396aff;
+    --blue-600: #3460e8;
+    --blue-700: #284bb5;
+    --blue-800: #1f3a8c;
+    --blue-900: #182d6b;
+}
+
+/* Hero Section */
+.engy-hero-section {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #DAE5FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    padding-bottom:3rem;
+}
+
+.engy-hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.engy-hero-section p {
+    font-size: 1.25rem;
+    color: #b5b2b2;
+    margin-bottom: 20px;
+}
+
+.engy-features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.engy-features-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #b5b2b2;
+}
+
+.engy-features-list i {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--blue-500);
+}
+
+.engy-hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.engy-hero-images img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+/* Pricing Section */
+
+.engy-pricing-section {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #DAE5FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    padding:3rem;
+    width:100%;
+}
+
+.engy-pricing-section p1 {
+    font-size: 1.25rem;
+    color: #b5b2b2;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.engy-pricing-section h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.engy-pricing-section i {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--blue-500);
+}
+
+.engy-card-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.engy-pricing-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.engy-pricing-card.engy-basic,
+.engy-pricing-card.engy-standard,
+.engy-pricing-card.engy-ultimate {
+    color: var(--blue-500);
+}
+
+.engy-pricing-card.engy-premium {
+    background: var(--blue-500);
+    color: #fff;
+}
+.engy-pricing-card.engy-premium i{
+    color:#fff;
+}
+.engy-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.engy-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.engy-price-label {
+    font-size: 14px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.engy-price {
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.engy-btn,
+.engy-btn_premium {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.engy-btn {
+    background-color: var(--blue-500);
+    color: #fff;
+}
+
+.engy-btn_premium {
+    background-color: #fff;
+    color: var(--blue-500);
+}
+
+.engy-features,
+.engy-features_premium {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.engy-features li,
+.engy-features_premium li {
+    margin: 10px 0;
+}
+
+.engy-features {
+    color: black;
+}
+
+.engy-features_premium {
+    color: #fff;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-container .swiper-slide {
+    text-align: center;
+    /* font-size: 18px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* Demo Section */
+.engy-demo-section {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #DAE5FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    overflow: hidden; /* Allow engy-demo-container to handle overflow */
+}
+
+.engy-demo-container {
+    position: relative;
+    width: 100%; /* Decrease the width of the container */
+    max-width: 1000px; /* Adjust as needed */
+    background-color: #000;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    overflow: visible; /* Allow overflow to be visible */
+    padding-bottom:2rem;
+}
+
+.engy-text-section {
+    max-width: 100%;
+}
+
+.engy-text-section h1 {
+    color: #2B5EE6;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding-top:3rem;
+}
+
+.engy-text-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.engy-text-section .engy-btn {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    color: #2B5EE6;
+    background: none;
+    border: 2px solid #2B5EE6;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.engy-phone {
+    position: absolute; /* Absolute positioning relative to engy-demo-container */
+    width: 460px; /* Adjust the width to control the size */
+    height: auto; /* Maintain aspect ratio */
+    max-width: none; /* Remove max-width constraint */
+    left: 80%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    top: -7%; /* Adjust vertical position */
+    z-index: 9; /* Ensure it is on top */
+}
+
+.engy-phone img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+    position: relative;
+    z-index: 5; /* Ensure it is on top */
+}
+
+.engy-star {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: url('project_imgs/demo_pic.png') no-repeat center center;
+    background-size: contain;
+    z-index: 4; /* Ensure stars are behind the phone */
+}
+
+.engy-star1 { top: 15%; left: -20%; }
+.engy-star2 { top: 8%; left: 20%; }
+.engy-star3 { top: 50%; left: 2%; }
+.engy-star4 { top: 20%; left: 83%; }
+.engy-star5 { top: 45%; left: 68%; }
+.engy-star6 { top: 70%; left: 80%; }
+  
+/* Responsive styles */
+@media(max-width: 770px) {
+    .engy-hero-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+    .engy-features-list{
+        text-align:left;
+    }
+    .engy-hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .engy-hero-section p {
+        font-size: 1rem;
+    }
+
+    .engy-pricing-section {
+        padding: 1rem;
+    }
+    .engy-pricing-section h1{
+        
+        font-size:18px;
+    }
+    .engy-card-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .engy-pricing-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .engy-demo-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .engy-demo-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .engy-text-section {
+        text-align: center;
+    }
+
+    .engy-phone {
+        position: relative;
+        left: auto;
+        transform: none;
+        top: auto;
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .engy-star {
+        display: block;
+    }
+}
+
+/* mobile devices */
+@media(max-width: 480px) {
+    .engy-hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .engy-hero-section p {
+        font-size: 0.875rem;
+    }
+
+    .engy-pricing-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .engy-pricing-section p1 {
+        font-size: 0.875rem;
+    }
+
+    .engy-phone {
+        width: 70%;
+    }
+}
+
+/* Custom Media Query for Star Positions */
+@media(max-width: 768px) {
+    .engy-star1 { top: 10%; left: -10%; }
+    .engy-star2 { top: 5%; left: 15%; }
+    .engy-star3 { top: 40%; left: 5%; }
+    .engy-star4 { top: 15%; left: 75%; }
+    .engy-star5 { top: 35%; left: 60%; }
+    .engy-star6 { top: 55%; left: 70%; }
+}
